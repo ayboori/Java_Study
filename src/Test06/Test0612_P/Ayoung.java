@@ -1,12 +1,14 @@
 // 최댓값과 최솟값
 
-package Test06.Test0607_P;
+package Test06.Test0612_P;
 
-public class Ayoung_P {
+public class Ayoung {
+
     // 예시를 이용하여 solution 메서드를 잘 구현했는지 확인하는 main 메서드
     public static void main( String[] args ) {
-        Ayoung_P ay = new Ayoung_P();
+        Ayoung ay = new Ayoung();
 
+        // 프로그래머스 문제에서 나오는 예제들
         String t1 = "1 2 3 4";
         String t2 = "-1 -2 -3 -4";
         String t3 = "-1 -1";
