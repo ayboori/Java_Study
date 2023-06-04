@@ -1,9 +1,11 @@
-package Test06.Test0605_P;
+// 최댓값과 최솟값
 
-public class Hyena_Pro {
-    // 예시를 이용해 코드를 돌려보는 main 메서드.
+package Test06.Test0607_P;
+
+public class Hyena_P {
+    // 예시를 이용하여 solution 메서드를 잘 구현했는지 확인하는 main 메서드
     public static void main( String[] args ) {
-        Hyena_Pro hn = new Hyena_Pro();
+        Hyena_P hn = new Hyena_P();
 
         String t1 = "1 2 3 4";
         String t2 = "-1 -2 -3 -4";
