@@ -1,10 +1,10 @@
-package Test06.Test0605_P;
+// 최댓값과 최솟값
 
-public class Jinhyuk_Pro {
-
-    // 예시를 이용해 코드를 돌려보는 main 메서드.
+package Test06.Test0607_P;
+public class Jinhyuk_P {
+    // 예시를 이용하여 solution 메서드를 잘 구현했는지 확인하는 main 메서드
     public static void main( String[] args ) {
-        Jinhyuk_Pro jh = new Jinhyuk_Pro();
+        Jinhyuk_P jh = new Jinhyuk_P();
 
         String t1 = "1 2 3 4";
         String t2 = "-1 -2 -3 -4";
