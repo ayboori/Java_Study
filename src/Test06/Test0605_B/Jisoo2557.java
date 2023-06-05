@@ -9,7 +9,7 @@ public class Jisoo2557 {
     }
 
     public String sol() {
-        return "hello World!";
+        return "Hello World!";
     }
 
 }
