@@ -17,6 +17,8 @@ Java_Study.iml
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+.idea
+test.iml
 
 ### NetBeans ###
 /nbproject/private/
