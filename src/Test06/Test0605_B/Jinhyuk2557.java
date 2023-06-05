@@ -4,7 +4,8 @@ package Test06.Test0605_B;
 
 public class Jinhyuk2557 {
     public static void main( String[] args ) {
-
+        System.out.println("hello World!");
+        //왜 안되는걸까
     }
 
 }
