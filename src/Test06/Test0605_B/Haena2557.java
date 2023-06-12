@@ -3,7 +3,6 @@
 package Test06.Test0605_B;
 public class Haena2557 {
     public static void main( String[] args ) {
-        System.out.println("Hello world!");
+        System.out.println("Hello World!");
     }
-
 }
