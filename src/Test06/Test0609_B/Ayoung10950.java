@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Ayoung10950 {
     public static void main( String[] args ) {
+    	
     	Scanner scanner = new Scanner(System.in);
     	
     	int T = scanner.nextInt();
