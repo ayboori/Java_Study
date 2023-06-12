@@ -25,7 +25,6 @@ public class Jisoo2 {
 
         int max = Integer.parseInt( sp[0] );
         int min = Integer.parseInt( sp[0] );
-
         for ( int i = 1; i < sp.length; i++ ) {
             int ele = Integer.parseInt( sp[i] );
             if ( min > ele ) {
@@ -35,7 +34,6 @@ public class Jisoo2 {
                 max = ele;
             }
         }
-
         sb.append( min + " " + max );
         return sb.toString();
     }
