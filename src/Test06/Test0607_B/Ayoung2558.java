@@ -7,7 +7,7 @@ public class Ayoung2558 {
     	Scanner scanner = new Scanner(System.in);
     	int a = scanner.nextInt();
     	int b = scanner.nextInt();
-    	System.out.println(a+b-2);
+    	System.out.println(a+b);
     	scanner.close();
     }
 }
