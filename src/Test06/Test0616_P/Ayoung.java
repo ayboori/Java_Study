@@ -1,5 +1,45 @@
-// lv.1 ì œì¼ ì‘ì€ ìˆ˜ ì œê±°í•˜ê¸°
+// lv.1 Á¦ÀÏ ÀÛÀº ¼ö Á¦°ÅÇÏ±â
 package Test06.Test0616_P;
 
+import java.util.Arrays;
+
 public class Ayoung {
+	public static class Solution {
+	    public int[] solution(int[] arr) {
+	        int[] answer = new int[arr.length-1]; // ÀÔ·Â¹ŞÀº Å©±âº¸´Ù ÇÑ Ä­ ÀÛ°Ô ¹è¿­ ¼³Á¤ (ÀÛÀº °ª ÇÏ³ª »ç¶óÁö´Ï±î)
+	        int minNum = arr[0]; // °¡Àå ÀÛÀº ¼ö ÃÊ±ê°ª ¼³Á¤
+	        int j =0; // answer ¹è¿­À» À§ÇÑ º¯¼ö
+	                
+	        if (arr.length <= 1){ // ¹è¿­ ±æÀÌ°¡ 1Ä­ ÀÌÇÏÀÏ °æ¿ì
+	            return new int[] {-1}; // °ªÀÌ -1ÀÎ ¹è¿­ ¸®ÅÏ
+	        }else{ // ¾Æ´Ñ °æ¿ì
+	            for (int i=0; i<arr.length ; i++){ // ÃÖ¼Ú°ª ±¸ÇÏ±â
+	                if(minNum > arr[i]){
+	                    minNum = arr[i];
+	                }
+	            }
+	            
+	            for(int i=0; i<arr.length; i++){ // Á¤´äÀ¸·Î ¸®ÅÏÇÒ ¹è¿­ ¼³Á¤
+	                if(arr[i] != minNum){ // °¡Àå ÀÛÀº ¼ıÀÚ°¡ ¾Æ´Ò °æ¿ì¿¡¸¸
+	                    answer[j] = arr[i]; // Á¤´ä ¹è¿­¿¡ °ª ¼¼ÆÃ
+	                     j++;
+	                }
+	            }                  
+	        return answer;
+	        }
+	    	}
+	    }
+	    
+	    public static void main(String args[]) {
+	    	Solution solution = new Solution();
+	    	// Å×½ºÆ® ÄÉÀÌ½ºµé
+	    	int [] arr1 = {1,2,3,4};
+	    	int [] arr2 = {3,7,4,8};
+	    	int[] arr3 = {10};
+	    	
+	    	// Å×½ºÆ® ÄÉÀÌ½ºµé ¹®ÀÚ¿­·Î ¹Ù²ã Ãâ·Â
+	    	System.out.println(Arrays.toString(solution.solution(arr1)));
+	    	System.out.println(Arrays.toString(solution.solution(arr2)));
+	    	System.out.println(Arrays.toString(solution.solution(arr3)));
+	    }
 }
