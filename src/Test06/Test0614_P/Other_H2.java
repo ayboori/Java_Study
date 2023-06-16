@@ -1,9 +1,9 @@
 package Test06.Test0614_P;
 
-public class Other2 {
+public class Other_H2 {
     // 메소드 사용
     public static void main( String[] args ) {
-        Other2 hn = new Other2();
+        Other_H2 hn = new Other_H2();
 
         // 프로그래머스 문제에서 나오는 예제들
         String s1 = "abcde";
@@ -15,7 +15,7 @@ public class Other2 {
     }
 
         public String solution(String s) {
-            Other2 hn = new Other2();
+            Other_H2 hn = new Other_H2();
             String answer = hn.getMiddle(s);
             return answer;
         }

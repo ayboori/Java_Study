@@ -1,9 +1,9 @@
 package Test06.Test0614_P;
 
-public class Other1 {
+public class Other_H1 {
     // StringBuilder와 append 사용
     public static void main( String[] args ) {
-        Other1 hn = new Other1();
+        Other_H1 hn = new Other_H1();
 
         // 프로그래머스 문제에서 나오는 예제들
         String s1 = "abcde";
