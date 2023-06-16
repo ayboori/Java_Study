@@ -1,35 +1,45 @@
 // 최댓값과 최솟값
-
 package Test06.Test0612_P;
-import java.util.Scanner;
+
 public class Jinhyuk {
     public static void main(String[] args) {
         Jinhyuk jh = new Jinhyuk();
-        System.out.println(Jinhyuk.Solution);
+        Solution sol = jh.new Solution();
+        String t1 = "1 2 3 4";
+        String t2 = "-1 -2 -3 -4";
+        String t3 = "-1 -1";
+
+        System.out.println(sol.solution(t1));
+        System.out.println(sol.solution( t2 ) );
+        System.out.println(sol.solution( t3 ) );
+
     }
-    // 예시를 이용하여 solution 메서드를 잘 구현했는지 확인하는 main 메서드
+    // 예시를 이용하여 solution 메서드를 잘 구현했는지 확인하는 main 메서
     class Solution {
         public String solution(String s) {
-            Scanner in = new Scanner(System.in);
+            Jinhyuk jh = new Jinhyuk();
+            String[] str = s.split(" ");
 
-            int a = in.nextInt();
-            int[] list = new int[a];
+            int[] num = new int[str.length];
 
-            for (int i = 0; i < a; i++) {
-                list[i] = in.nextInt();
+            for (int i = 0; i < str.length; i++) {
+//                num[i] = Integer.valueOf(str[i]);
+                num[i] = Integer.parseInt(str[i]);
             }
-            in.close();
-            int max = list[0];
-            int min = list[0];
-            for (int i = 0; i < list.length; i++) {
-                if (list[i] > max) {
-                    max = list[i];
+            int maxNum = num[0];
+            int minNum = num[0];
+            for (int i = 0; i < num.length; i++) {
+                if (num[i] > maxNum) {
+                    maxNum = num[i];
                 }
-                if (list[i] < min) {
-                    min = list[i];
+                if (num[i] < minNum) {
+                    minNum = num[i];
                 }
             }
-            String answer = min + " " + max;
+            String maxStr = Integer.toString(maxNum);
+            String minStr = Integer.toString(minNum);
+
+            String answer = minStr + " " + maxStr;
             return answer;
         }
     }
