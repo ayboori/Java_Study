@@ -32,7 +32,7 @@ public class Other_J {
             }
         }
 
-        // 최솟값이 있는 minIndex를 기분으로 arr배열 땡겨서 대입
+        // 최솟값이 있는 minIndex를 기준으로 arr배열 땡겨서 대입
         for ( int i = minIndex + 1; i < arr.length; i++ ) {
             arr[i - 1] = arr[i];
         }
