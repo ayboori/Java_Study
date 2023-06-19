@@ -14,8 +14,8 @@ public class Jinhyuk10951 {
     }
 }
 // hasNext()는 boolean 값으로 반환합니다.
-hasNext()
-    hasNextLine()
-        hasNextInt()
+//hasNext()
+//    hasNextLine()
+//        hasNextInt()
 // 다음에 가져올 값이 있냐 없느냐로 판단합니다.
 // hasNextInt()일 경우 다음에 가져올 int값이 있느냐 없느냐로 참 거짓을 판단합니다.
