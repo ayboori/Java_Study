@@ -3,7 +3,6 @@ package Test06.Test0619_P;
 import java.util.ArrayList;
 
 public class jinhyuk2 {
-    import java.util.ArrayList;
 
     public class Jinhyuk {
         class Solution {
