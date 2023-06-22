@@ -2,7 +2,6 @@
 package Test06.Test0621_P;
 
 public class Ayoung {
-    class Solution {
         public int solution(int left, int right) {
             int answer = 0; // 정답
             for (int i = left; i <= right; i++){ // 왼쪽 ~ 오른쪽 값
@@ -25,15 +24,13 @@ public class Ayoung {
             System.out.print(count + ">>" ); // 결과 찍어보기
             return count;
         }
-    }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Ayoung ayoung = new Ayoung();
 
-        solution.solution(14,17);
-        solution.solution(1,27);
-        solution.solution(35,45);
-
+        ayoung.solution(14,17);
+        ayoung.solution(1,27);
+        ayoung.solution(35,45);
     }
 }
 /*
