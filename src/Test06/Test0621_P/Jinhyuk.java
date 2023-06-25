@@ -8,11 +8,13 @@ public class Jinhyuk {
 
         System.out.println(jinhyuk.solution(13, 17));
         System.out.println(jinhyuk.solution(24, 27));
+
     }
 
     public int solution(int left, int right) {
         //answer 선언, 초기화
         int answer = 0;
+
 
         //left부터 right까지 값을 a로 지정하여 하나씩 ++하며 반복
         for (int a = left; a <= right; a++) {
@@ -48,4 +50,5 @@ public class Jinhyuk {
     테스트 5 〉	통과 (5.57ms, 74.5MB)
     테스트 6 〉	통과 (0.60ms, 76.4MB)
     테스트 7 〉	통과 (0.21ms, 78.2MB)  */
+
 

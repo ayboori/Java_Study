@@ -12,27 +12,27 @@ public class Ayoung {
         System.out.println(ay.solution( b ));
         System.out.println(ay.solution( c ));
     }
-        class Solution {
-            public StringBuilder solution(String s) {
-                StringBuilder answer = new StringBuilder();
-                boolean flag = true; // 공백 이후의 첫번째 문자열인지 확인하는 함수
+    class Solution {
+        public StringBuilder solution(String s) {
+            StringBuilder answer = new StringBuilder();
+            boolean flag = true; // 공백 이후의 첫번째 문자열인지 확인하는 함수
 
-                for (int i = 0 ; i < s.length(); i++){
-                    if(flag){ // 앞의 문자열이 공백이었으면
-                        answer.append(Character.toUpperCase(s.charAt(i))); // 대문자로
-                    }else{ // 아니면
-                        answer.append(Character.toLowerCase(s.charAt(i))); // 소문자로
-                    }
-
-                    if(s.charAt(i) == ' '){
-                        flag = true;
-                    }else{
-                        flag = false;
-                    } // 현재 문자열 공백인지 아닌지에 따라 다음의 플래그 세팅
+            for (int i = 0 ; i < s.length(); i++){
+                if(flag){ // 앞의 문자열이 공백이었으면
+                    answer.append(Character.toUpperCase(s.charAt(i))); // 대문자로
+                }else{ // 아니면
+                    answer.append(Character.toLowerCase(s.charAt(i))); // 소문자로
                 }
-                return answer;
+
+                if(s.charAt(i) == ' '){
+                    flag = true;
+                }else{
+                    flag = false;
+                } // 현재 문자열 공백인지 아닌지에 따라 다음의 플래그 세팅
             }
+            return answer;
         }
+    }
 }
 
 /*
