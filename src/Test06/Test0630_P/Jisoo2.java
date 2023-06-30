@@ -3,13 +3,13 @@ package Test06.Test0630_P;
 
 import java.util.Stack;
 
-public class Jisoo {
+public class Jisoo2 {
     public static void main(String[] args) {
-        Jisoo jisoo = new Jisoo();
+        Jisoo2 jisoo = new Jisoo2();
     }
 
-    // 처음 풀이
-    public static int[] jisooSolution(int[] arr) {
+    // get() 대신에 pop()을 넣어본다. 끝에서부터 조회를 하게 되니까 인덱스도 끝에서부터 넣어준다.
+    public static int[] solution2(int[] arr) {
         Stack<Integer> stack = new Stack<>();
         stack.push(arr[0]);
         for (int i = 1; i < arr.length; i++) {
@@ -19,8 +19,8 @@ public class Jisoo {
         }
 
         int[] answer = new int[stack.size()];
-        for (int i = 0; i < stack.size(); i++) {
-            answer[i] = stack.get(i);
+        for (int i = stack.size() - 1; i >= 0; i--) {
+            answer[i] = stack.pop();
         }
 
         return answer;
