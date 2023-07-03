@@ -3,7 +3,7 @@ package Test06.Test0628_P;
 
 public class Jinhyuk {
     public static void main(String[] args) {
-        Test06.Test0626_P.Jinhyuk jinhyuk = new Test06.Test0626_P.Jinhyuk();
+        Jinhyuk jinhyuk = new Jinhyuk();
         String s1 = "AB";
         int n1 = 1;
 
