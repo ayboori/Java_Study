@@ -31,9 +31,7 @@ public class Jinhyuk {
             // 다시 n은 while문의 범위안에 속하므로 반복하면서
             // 2가 남아서 22가 되고 n/3으로 0이되며 반복이 종료됩니다.
 //            continue; 뭔가에 홀린듯이 적었었는데 없는게 더 빠름
-
         }
-
 
         threeStrikes = new StringBuilder(threeStrikes).reverse().toString();
         // new StringBuilder 를 생성하고 threeStrikes를 초기값으로 가집니다
