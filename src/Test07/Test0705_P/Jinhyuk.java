@@ -1,5 +1,6 @@
 package Test07.Test0705_P;
 
+
 import java.util.Arrays;
 
 public class Jinhyuk {
@@ -7,59 +8,50 @@ public class Jinhyuk {
 
         Jinhyuk jinhyuk = new Jinhyuk();
 
-        int[] d1 = {1, 3, 2, 5, 4};
-        int[] d2 = {2, 2, 3, 3};
+        String s1 = "try hello world";
 
-        int budget1 = 9;
-        int budget2 = 10;
-
-        System.out.println(jinhyuk.solution(d1, budget1));
-        System.out.println(jinhyuk.solution(d2, budget2));
+        System.out.println(jinhyuk.solution(s1));
     }
 
-    public int solution(int[] d, int budget) {
-        int answer = 0;
+    /*1.전체를 소문자로 만들고 쪼개준다. split(" ", -1)
+     2.각각의 문자마다 배열을 돌려 char로 바꾸어 저장해주고 toCharArray()
+     3.다시 배열을 돌려서 홀수번째의 자릿수일시 대문자로 바꾸어준다. toUpperCase()
+     4.다 바꾸었다면 배열에 저장해주고  new String(chars)
+     5.배열을 문자열로 합쳐서 반환  String.join()
+     */
 
-        int sum = 0;
+    public String solution(String s) {
+        String[] words = s.toLowerCase().split(" ", -1); //전체를 소문자로 바꾸고 나눠서 words에 담는다
+        //split의 두번째 인자로 -1을 사용시 나누는 문자열 갯수 제한이 없고 연속적으로 구분자가 있는 경우 포함
 
-        Arrays.sort(d); //배열을 작은숫자부터 순서대로 오름차순 정리하는 메소드
-
-        for (int i = 0; i < d.length; i++) { //d 길이만큼 반복
-            sum += d[i]; //순서대로 하나씩 sum 에 담고
-
-            if (sum <= budget) { // sum 이 budget과 비교해서 작거나 같으면
-                answer += 1; // answer을 하나씩 더해준다
+        for (int i = 0; i < words.length; i++) { //words의 길이만큼 배열을 돌린다
+            char[] chars = words[i].toCharArray(); //chars라는 char형태의 배열에 소문자로 담는다
+            for (int j = 0; j < chars.length; j++) { //chars의 길이만큼 배열을 또 돌린다
+                if (j % 2 == 0) { //단어의 위치가 0부터 시작이니까, j가 짝수일때==홀수번째의 단어
+                    chars[j] = Character.toUpperCase(chars[j]); //대문자로 바꾸어준다
+                }
             }
+            words[i] = new String(chars); // char형식의 배열인 chars를 다시 words라는 string배열로 넣어주고
         }
-        return answer; //답 도출
+        return String.join(" ", words); //join으로 띄어쓰기로 구분된 words 배열을 문자열로 만들어준다
     }
 }
 
-/*
-        테스트 1 〉	통과 (0.39ms, 76.9MB)
-        테스트 2 〉	통과 (0.35ms, 73.7MB)
-        테스트 3 〉	통과 (0.47ms, 75.9MB)
-        테스트 4 〉	통과 (0.33ms, 76.7MB)
-        테스트 5 〉	통과 (0.49ms, 82.5MB)
-        테스트 6 〉	통과 (0.50ms, 77.5MB)
-        테스트 7 〉	통과 (0.55ms, 81MB)
-        테스트 8 〉	통과 (0.35ms, 77.5MB)
-        테스트 9 〉	통과 (0.36ms, 77.3MB)
-        테스트 10 〉	통과 (0.40ms, 74.4MB)
-        테스트 11 〉	통과 (0.39ms, 67.2MB)
-        테스트 12 〉	통과 (0.53ms, 76.3MB)
-        테스트 13 〉	통과 (0.50ms, 77.9MB)
-        테스트 14 〉	통과 (0.44ms, 73.7MB)
-        테스트 15 〉	통과 (0.40ms, 73.6MB)
-        테스트 16 〉	통과 (0.38ms, 70.4MB)
-        테스트 17 〉	통과 (0.56ms, 76.8MB)
-        테스트 18 〉	통과 (0.45ms, 76.3MB)
-        테스트 19 〉	통과 (0.53ms, 76.9MB)
-        테스트 20 〉	통과 (0.34ms, 72.7MB)
-        테스트 21 〉	통과 (0.50ms, 79.9MB)
-        테스트 22 〉	통과 (0.49ms, 79.6MB)
-        테스트 23 〉	통과 (0.39ms, 68.2MB)
-        채점 결과
-        정확성: 100.0
-        합계: 100.0 / 100.0
-        */
+//        for (int i = 0; i < s.length(); i++) {
+//            char c = s.charAt(i);
+//            if (c == ' ') {
+//                answer += ' ';
+//            }else if (i % 2 == 0) {
+//                answer += String.valueOf(c).toUpperCase();
+//            } else {
+//                answer += String.valueOf(c).toLowerCase();
+//            }
+//        }
+
+//        for (char c : s.toCharArray()) { //한글자씩 저장하고
+//            if (c % 2 == 0) {
+//                answer += String.valueOf(c).toUpperCase();
+//            } else {
+//                answer += String.valueOf(c).toLowerCase();
+//            }
+//        }
