@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class Ayoung {
     public static void main(String[] args) {
         Ayoung ay = new Ayoung();
-        System.out.println(new int[1, 3, 2, 5, 4],9);
-        System.out.println(new int[2, 2, 3, 3],10);
+        System.out.println(ay.solution(new int[ ] {1, 3, 2, 5, 4}, 9));
+        System.out.println(ay.solution(new int[ ] {12, 2, 3, 3},10));
     }
     public int solution(int[] d, int budget) {
         Arrays.sort(d); // 오름차순 정렬
