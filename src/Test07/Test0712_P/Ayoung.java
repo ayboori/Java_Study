@@ -4,9 +4,9 @@ public class Ayoung {
     public static void main(String[] args) {
         Ayoung ay = new Ayoung();
 
-        System.out.println(solution(new int[-2, 3, 0, 2, -5]); // 2
-        System.out.println(solution(new int[-3, -2, -1, 0, 1, 2, 3]); // 5
-        System.out.println(solution(new int[-1, 1, -1, 1]); // 0
+        System.out.println(ay.solution(new int[]{-2, 3, 0, 2, -5})); // 2
+        System.out.println(ay.solution(new int[]{-3, -2, -1, 0, 1, 2, 3})); // 5
+        System.out.println(ay.solution(new int[]{-1, 1, -1, 1})); // 0
     }
 
     public int solution(int[] number) {
