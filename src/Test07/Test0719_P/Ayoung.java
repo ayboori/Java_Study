@@ -3,10 +3,10 @@ package Test07.Test0719_P;
 public class Ayoung {
     public static void main(String[] args) {
         Ayoung ay = new Ayoung();
-        System.out.println(ay.solution("one4seveneight"); //1478
-        System.out.println(ay.solution("23four5six7"); //234567
-        System.out.println(ay.solution("2three45sixseven"); //234567
-        System.out.println(ay.solution("123"); //123
+        System.out.println(ay.solution("one4seveneight")); //1478
+        System.out.println(ay.solution("23four5six7")); //234567
+        System.out.println(ay.solution("2three45sixseven")); //234567
+        System.out.println(ay.solution("123")); //123
     }
 
     public int solution(String s) {

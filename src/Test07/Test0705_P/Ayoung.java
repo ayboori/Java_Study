@@ -3,9 +3,9 @@ package Test07.Test0705_P;
 public class Ayoung {
     public static void main(String[] args) {
         Ayoung a = new Ayoung();
-        System.out.println(solution("Try hello world"));
-        System.out.println(solution("Try       HELLO   world"));
-        System.out.println(solution("TRY HELLO  "));
+        System.out.println(a.solution("Try hello world"));
+        System.out.println(a.solution("Try       HELLO   world"));
+        System.out.println(a.solution("TRY HELLO  "));
     }
 
     public String solution(String s) {

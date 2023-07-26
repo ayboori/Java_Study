@@ -1,6 +1,8 @@
 // lv.1 같은 숫자는 싫어
 package Test06.Test0630_P;
 
+import java.util.Stack;
+
 public class Ayoung {
     public int[] solution(int []arr) {
         Stack<Integer> stack = new Stack<>(); // 가변 크기의 컬렉션으로 값 담기
