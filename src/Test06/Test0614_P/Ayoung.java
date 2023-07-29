@@ -2,7 +2,6 @@
 package Test06.Test0614_P;
 
 public class Ayoung {
-    class Solution {
         public String solution(String s) {
             if (s.length() % 2 ==0){ // 짝수일 경우
                 return Character.toString(s.charAt(s.length()/2-1)) + Character.toString(s.charAt(s.length()/2));
@@ -13,9 +12,8 @@ public class Ayoung {
                 // 이때 charAt은 char 값이므로 스트링으로 변환
             }
         }
-    }
     public static void main(String[] args) {
-        Solution sol = new Solution();
+       Ayoung sol = new Ayoung();
         // 테스트 케이스들
         System.out.println(sol.solution("tree"));
         System.out.println(sol.solution("match"));

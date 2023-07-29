@@ -21,10 +21,8 @@ public class Jinhyuk {
             //arr의 길이는 최솟값 하나가 빠지는 arr.length-1이 되며
             answer = new int[arr.length - 1];
             //for문을 돌려서 math.min함수를 통해 최솟값인 minNum을 찾아주고
-
-            for (int i = 1; i < arr.length; i++) {
-
-                minNum = Math.min(minNum, arr[i]);
+           for (int i = 1; i < arr.length; i++) {
+               minNum = Math.min(minNum, arr[i]);
             }
             int index = 0;
             //for문을 또 돌려서 나머지 숫자를 배열에 넣어줄 것 인데

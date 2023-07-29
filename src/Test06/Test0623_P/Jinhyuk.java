@@ -21,13 +21,14 @@ public class Jinhyuk {
         };
         String[] routes2 = {"E 2", "S 2", "W 1"}; // 2번 명령
 
-        String[] park3 = { // 3번 공원의 형태
+        String[] park3 = {
                 "OSO",
                 "OOO",
                 "OXO",
-                "OOO"
+                "OOO"// 3번 공원의 형태
         };
-        String[] routes3 = {"E 2", "S 3", "W 1"}; // 3번 명령
+
+        String[] routes3 = {"E 2", "S 2", "W 1"};
 
         // 출력하기
         // Arrays.toString는 각 배열의 내용을 문자열로 변경하고
@@ -40,7 +41,7 @@ public class Jinhyuk {
         System.out.println(Arrays.toString(jinhyuk.solution(park3, routes3)));
         // 3번 문제 답 확인
 
-        //올바른 답안 순서대로 [2, 1] [0, 1] [0, 0]
+        //올바른 답안 순서대로 [2, 1] [0, 1]
     }
 
     // solution(공원형태 지정, 이동 명령)
@@ -125,6 +126,7 @@ public class Jinhyuk {
         }
         int[] answer = {y, x}; //결과값이 세로, 가로의 형태로 요구되서 y,x로 써준다.
         return answer; // 결과를 출력하낟.
+
     }
 }
 

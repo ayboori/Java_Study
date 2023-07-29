@@ -12,7 +12,6 @@ public class Ayoung {
         System.out.println(ay.solution( b ));
         System.out.println(ay.solution( c ));
     }
-    class Solution {
         public StringBuilder solution(String s) {
             StringBuilder answer = new StringBuilder();
             boolean flag = true; // 공백 이후의 첫번째 문자열인지 확인하는 함수
@@ -32,7 +31,6 @@ public class Ayoung {
             }
             return answer;
         }
-    }
 }
 
 /*
