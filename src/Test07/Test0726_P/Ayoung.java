@@ -1,5 +1,4 @@
 package Test07.Test0726_P;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -8,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 // lv.1 개인정보 수집 유효기간
-
 public class Ayoung {
 	public static void main(String[] args) throws ParseException{
 		Ayoung sol = new Ayoung();
