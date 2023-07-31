@@ -1,6 +1,7 @@
 // 두 개 뽑아서 더하기
 package Test07.Test0731_P;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 public class Ayoung {
     public static void main(String[] args) {
