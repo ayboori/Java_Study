@@ -4,7 +4,7 @@ out/
 !**/src/test/**/out/
 .idea
 test.iml
-Java_Study.iml
+Java-Study.iml
 
 ### Eclipse ###
 .apt_generated
