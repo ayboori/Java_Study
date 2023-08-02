@@ -4,6 +4,7 @@ out/
 !**/src/test/**/out/
 .idea
 test.iml
+Java-Study.iml
 Java_Study.iml
 
 ### Eclipse ###
