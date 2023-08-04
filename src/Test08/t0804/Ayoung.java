@@ -1,6 +1,8 @@
 //  lv.1 가장 가까운 같은 글자
 package Test08.t0804;
 
+import java.util.Arrays;
+
 public class Ayoung {
 
     public static void main(String[] args) {
