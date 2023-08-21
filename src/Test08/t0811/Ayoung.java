@@ -1,5 +1,6 @@
 package Test08.t0811;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 // lv.1 추억 점수
