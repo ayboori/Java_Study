@@ -1,4 +1,4 @@
-package Test08.t0830;
+package Test09.t0906;
 
 public class Jinhyuk {
 }
