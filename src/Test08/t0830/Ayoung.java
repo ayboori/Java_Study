@@ -1,5 +1,6 @@
 package Test08.t0830;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 // lv.1 모의고사
 public class Ayoung {
