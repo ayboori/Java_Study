@@ -1,8 +1,6 @@
 // 소수 만들기
 package Test09.t0906;
 
-import java.util.Arrays;
-
 public class Jisoo {
 	public static void main(String[] args) {
 		Jisoo js = new Jisoo();
